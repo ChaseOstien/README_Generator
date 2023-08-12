@@ -101,8 +101,8 @@ function generateMarkdown(data) {
   ## Tests
   ${data.tests}
 
-  # Questions
-  ## If you have any questions about this application, please send all correspondence to the contact info listed below. 
+  ## Questions
+  ### If you have any questions about this application, please send all correspondence to the contact info listed below. 
   * GitHub: ${data.git} - ${gitHub}
   * Email: ${data.email}
 `;
