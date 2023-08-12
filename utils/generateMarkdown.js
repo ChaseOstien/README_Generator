@@ -3,7 +3,7 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 
-const mitBadge = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]';
+const mitBadge = '[!License: MIT(https://img.shields.io/badge/License-MIT-yellow.svg)]';
 const apacheBadge = '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]';
 const gplBadge = '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]';
 const iscBadge = '[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)]';
@@ -33,7 +33,7 @@ function renderLicenseBadge(license) {
 }
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-const mitLink = '(https://opensource.org/licenses/MIT)';
+const mitLink = 'https://opensource.org/licenses/MIT';
 const apacheLink = '(https://opensource.org/licenses/Apache-2.0)';
 const gplLink = '(https://www.gnu.org/licenses/gpl-3.0)';
 const iscLink = '(https://opensource.org/licenses/ISC)';
@@ -77,13 +77,13 @@ function generateMarkdown(data) {
   return `# ${data.title} ${(mitBadge)}
 
   ## Table of Contents
-  * [description](#Description)
-  * [installation](#Installation)
-  * [usage](#Usage)
-  * [license](#License)
-  * [contributors](#Contributors)
-  * [tests](#Tests)
-  * [contact](#Contact)
+  * [Description](#Description)
+  * [Installation](#Installation)
+  * [Usage](#Usage)
+  * [License](#License)
+  * [Contributors](#Contributors)
+  * [Tests](#Tests)
+  * [Contact](#Contact)
 
   ## Description
   ${data.description}
