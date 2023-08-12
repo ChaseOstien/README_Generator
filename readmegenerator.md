@@ -1,4 +1,4 @@
-# README Generator undefined
+# README Generator https://img.shields.io/badge/License-MIT-yellow.svg
 
   ## Table of Contents
   * [description](#Description)
@@ -10,18 +10,18 @@
   * [contact](#Contact)
 
   ## Description
-  This is a command line application that generates a README file for your projects. It takes input via prompts that are generated using   the inquirer   package. 
+  test
   ## Installation
-  To install this application, create your project and run npm install inquirer from the root folder of your application. 
+  test
   ## Usage
-  To use this application, run your main JS file in node and answer all of the prompts. It will then generate a README file in your directory using the provided template.
+  test
   ## License
-  MIT License
+  https://opensource.org/licenses/MIT
   ## Contributors
-  N/A.
+  test
   ## Tests
-  To test this application, simply run the main JS file in node and enter your desired responses to the prompts, this will generate a file. Once generated you can edit the template to make changes to the appearance of your file. 
+  test
 
   # Contact
-  * GitHub: ChaseOstien
-  * Email: Chaseostien@gmail.com
+  * GitHub: test
+  * Email: test
