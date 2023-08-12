@@ -58,7 +58,7 @@ const questions = [
         type: 'list',
         message: 'What license would you like to use?',
         name: 'license',
-        choices: ['MIT License', 'Apache License 2.0:', 'GNU General Public License', 'ISC License', 'N/A'],
+        choices: ['MIT License', 'Apache License 2.0', 'GNU General Public License', 'ISC License', 'N/A'],
         validate: (value) => { 
             if (value) {
                 return true;
