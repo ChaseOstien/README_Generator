@@ -117,9 +117,11 @@ const questions = [
     },
 ];
 
+const readMe = 'README';
+
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(`./${fileName.toLowerCase().replace(/ /g, '')}.md`, data, (err)=>{
+    fs.writeFile(`./${readMe.replace(/ /g, '')}.md`, data, (err)=>{
         if (err) {
             console.log(err)
         }
