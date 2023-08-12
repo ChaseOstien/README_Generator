@@ -4,26 +4,26 @@
 // If there is no license, return an empty string
 
 const mitBadge = '![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)';
-const apacheBadge = '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]';
-const gplBadge = '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]';
-const iscBadge = '[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)]';
+const apacheBadge = '![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)';
+const gplBadge = '![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)';
+const iscBadge = '![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)';
 
 function renderLicenseBadge(license) {
   let badge = '';
-  switch (renderLicenseBadge) {
-    case license.answers = 'MIT License':
+  switch (license) {
+    case 'MIT License':
       badge = mitBadge;
       break;
-    case license.answers = 'Apache License 2.0':
+    case 'Apache License 2.0':
       badge =  apacheBadge;
       break;
-    case license.answers = 'GNU General Public License':
+    case 'GNU General Public License':
       badge = gplBadge;
       break;
-    case license.answers = 'ISC License':
+    case 'ISC License':
       badge = iscBadge;
       break;
-    case license.answers = 'N/A':
+    case 'N/A':
       badge = '';
       break;
     default:
@@ -34,32 +34,32 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 const mitLink = 'https://opensource.org/licenses/MIT';
-const apacheLink = '(https://opensource.org/licenses/Apache-2.0)';
-const gplLink = '(https://www.gnu.org/licenses/gpl-3.0)';
-const iscLink = '(https://opensource.org/licenses/ISC)';
+const apacheLink = 'https://opensource.org/licenses/Apache-2.0';
+const gplLink = 'https://www.gnu.org/licenses/gpl-3.0';
+const iscLink = 'https://opensource.org/licenses/ISC';
 
 function renderLicenseLink(license) {
-  license = '';
-  switch (renderLicenseLink) {
-    case license.answers = 'MIT License':
-      license = mitLink;
+  let link = '';
+  switch (license) {
+    case 'MIT License':
+      link = mitLink;
       break;
-    case license.answers = 'Apache License 2.0':
-      license =  apacheLink;
+    case 'Apache License 2.0':
+      link =  apacheLink;
       break;
-    case license.answers = 'GNU General Public License':
-      license = gplLink;
+    case 'GNU General Public License':
+      link = gplLink;
       break;
-    case license.answers = 'ISC License':
-      license = iscLink;
+    case 'ISC License':
+      link = iscLink;
       break;
-    case license.answers = 'N/A':
-      license = '';
+    case 'N/A':
+      link = '';
       break;
     default:
-      license = '';
+      link = '';
   }
-  return license;
+  return link;
 }
 
 // TODO: Create a function that returns the license section of README
@@ -74,7 +74,7 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title} ${(mitBadge)}
+  return `# ${data.title} ${renderLicenseBadge(data.license)}
 
   ## Table of Contents
   * [Description](#Description)
@@ -92,8 +92,8 @@ function generateMarkdown(data) {
   ## Usage
   ${data.usage}
   ## License
-  ${data.license}
-  ${mitLink}
+  ${data.license}\n
+  ${renderLicenseLink(data.license)}
   ## Contributors
   ${data.contributors}
   ## Tests
