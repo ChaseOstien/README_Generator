@@ -72,6 +72,8 @@ function renderLicenseSection(license) {
   return result;
 }
 
+const gitHub = 'https://github.com/ChaseOstien';
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title} ${renderLicenseBadge(data.license)}
@@ -83,7 +85,7 @@ function generateMarkdown(data) {
   * [License](#License)
   * [Contributors](#Contributors)
   * [Tests](#Tests)
-  * [Contact](#Contact)
+  * [Questions](#Questions)
 
   ## Description
   ${data.description}
@@ -99,8 +101,9 @@ function generateMarkdown(data) {
   ## Tests
   ${data.tests}
 
-  # Contact
-  * GitHub: ${data.git}
+  # Questions
+  ## If you have any questions about this application, please send all correspondence to the contact info listed below. 
+  * GitHub: ${data.git} - ${gitHub}
   * Email: ${data.email}
 `;
 }
