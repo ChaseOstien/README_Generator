@@ -1,4 +1,4 @@
-# README Generator https://img.shields.io/badge/License-MIT-yellow.svg
+# READEME Generator [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
 
   ## Table of Contents
   * [description](#Description)
@@ -16,7 +16,7 @@
   ## Usage
   test
   ## License
-  https://opensource.org/licenses/MIT
+  (https://opensource.org/licenses/MIT)
   ## Contributors
   test
   ## Tests
