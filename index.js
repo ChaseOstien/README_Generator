@@ -58,7 +58,7 @@ const questions = [
         type: 'list',
         message: 'What license would you like to use?',
         name: 'license',
-        choices: ['MIT License', 'Apache License 2.0:', 'GNU General Public License', 'ISC License', 'N/A'],
+        choices: ['MIT License', 'Apache License 2.0', 'GNU General Public License', 'ISC License', 'N/A'],
         validate: (value) => { 
             if (value) {
                 return true;
@@ -117,9 +117,11 @@ const questions = [
     },
 ];
 
+const readMe = 'README';
+
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(`./${fileName.toLowerCase().replace(/ /g, '')}.md`, data, (err)=>{
+    fs.writeFile(`./${readMe.replace(/ /g, '')}.md`, data, (err)=>{
         if (err) {
             console.log(err)
         }
