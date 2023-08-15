@@ -24,7 +24,7 @@
   ## Contributors
   This application currently has no contributors other then myself, Chase Ostien. 
   ## Tests
-  This application does not currently have any written tests. You can however, test the function of the application by initiaiting it and asnwering the prompts to generate a file. Once you have generated a file and have viewed the output, you can iterate on this in future generated files.
+  This application does not currently have any written tests. You can however, test the function of the application by initializing it and answering the prompts to generate a file. Once you have generated a file and have viewed the output, you can iterate on this in future generated files.
 
   ## Questions
   ### If you have any questions about this application, please send all correspondence to the contact info listed below. 
