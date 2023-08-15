@@ -79,13 +79,13 @@ function generateMarkdown(data) {
   return `# ${data.title} ${renderLicenseBadge(data.license)}
 
   ## Table of Contents
-  * [Description](#Description)
-  * [Installation](#Installation)
-  * [Usage](#Usage)
-  * [License](#License)
-  * [Contributors](#Contributors)
-  * [Tests](#Tests)
-  * [Questions](#Questions)
+  * [Description](#description)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [License](#license)
+  * [Contributors](#contributors)
+  * [Tests](#tests)
+  * [Questions](#questions)
 
   ## Description
   ${data.description}
@@ -93,6 +93,8 @@ function generateMarkdown(data) {
   ${data.installation}
   ## Usage
   ${data.usage}
+  #### Example of command line prompts for this application.
+  ![Screenshot of command line prompts.](./utils/img/Screenshot1.png)
   ## License
   ${data.license}\n
   ${renderLicenseLink(data.license)}
