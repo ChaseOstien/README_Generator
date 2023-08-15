@@ -93,6 +93,7 @@ function generateMarkdown(data) {
   ${data.installation}
   ## Usage
   ${data.usage}
+  ![Screenshot of command line prompts.](./img/Screenshot1.png)
   ## License
   ${data.license}\n
   ${renderLicenseLink(data.license)}
